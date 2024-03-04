@@ -63,7 +63,6 @@ span{
 .container{
     /*set up a grid*/
     width:100%;
-    height:auto;
     display:grid;
     grid-template-rows: auto auto auto auto auto auto;
     grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
@@ -187,22 +186,27 @@ span{
     display:flex;
     flex-direction:column;
 }
+.f_image_content{
+    position:relative;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    margin:5%;
+}
 .f_image img{
-    width:auto;
-    height:80%;
+    height: 40em;
     box-shadow: 5px 5px 5px gray;
 }
 .f_image .content{
-    width:70%;
     display:flex;
     flex-direction:row;
+    justify-content: center;
     align-items:center;
     border-width:1px;
     border-color:#3F67C5;
     border-style:solid;
     border-radius: 5px;
-    padding-left: 2em;
-    padding-right: 2em;
+    padding:5%;
 }
 .f_image .description{
     display:flex;
@@ -246,6 +250,12 @@ span{
     display:flex;
     flex-direction:column;
 }
+.f_articles_content{
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    margin:5%;
+}
 .f_article_group{
     display:flex;
     flex-direction:row;
@@ -263,7 +273,7 @@ span{
 .f_articles a{
     width:100%;
     position:absolute;
-    margin-left:122em;
+    margin-left:100em;
     margin-top:37em;
     font-family:"Open Sans", sans-serif;
     font-weight: 400;
@@ -298,6 +308,8 @@ span{
     overflow:hidden;
     background:black;
     position:relative;
+    margin-top:5%;
+    margin-bottom:5%;
 }
 .call img{
     width:100%;
@@ -340,6 +352,13 @@ span{
     display:flex;
     flex-direction:column;
 }
+.f_news_content{
+    position:relative;
+    display:flex;
+    flex-direction:column;
+    margin:5%;
+
+}
 .f_news_group{
     display:flex;
     flex-direction:row;
@@ -360,17 +379,17 @@ span{
     border-color:#3F67C5;
 }
 .f_news .subtitle{
-    margin-left: 1em;
-    margin-right: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
 }
 .f_news .news_card a{
-    width: 100%;
+    position:absolute;
     font-family:"Open Sans", sans-serif;
     font-weight: 400;
     font-size: 14px;
     color:#231F20;
     text-decoration: none;
-    margin-left:15em;
+    margin-left:10em;
     margin-top:0em;
 }
 .f_news .news_card a:visited{
@@ -385,8 +404,6 @@ span{
 .footer{
     grid-area: 6/1/7/11;
     position:relative;
-    width:100%;
-    height:auto;
     margin-top:5em;
     padding: 2em;
     background-color:#EFEFEF;
