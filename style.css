@@ -1,1 +1,115 @@
+/*font settings*/
+.playfair-display-semibold {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+.playfair-display-regular {
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+.open-sans-bold {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+.open-sans-regular {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+}
 
+/*body setting*/
+.container{
+    margin-left:100px;
+    margin-right:100px;
+}
+.navigation{
+    z-index:1;
+    width:100%;
+    height:70px;
+    position:fixed;
+    top:0;
+    padding-top:2em;
+    display:flex;
+    flex-direction:row;
+    justify-content: space-around;
+    align-items:center;
+    background-color:#efefef31;
+    box-shadow:-5px 5px 5px gray;
+}
+.navigation #logo{
+    width: 3em;
+    height:3em;
+}
+.navigation .icon{
+    width:2em;
+}
+.navigation input[type=text]{
+    width: 30em;
+    padding:0.7em;
+    padding-left:3.5em;
+    background: url("ref/search.png") no-repeat 20px 7px;
+    background-size:1.5em;
+    border-radius: 30px;
+    border-width:1px;
+    border-style:solid;
+    font-family:"Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+.navigation button{
+    width:8em;
+    margin-left:1em;
+    padding:0.7em;
+    padding-left:1.5em;
+    padding-right:1.5em;
+    border-radius:30px;
+    background-color:#3F67C5;
+    font-family:"Open Sans", sans-serif;
+    font-weight:700;
+    font-size: 14px;
+    color:#EFEFEF;
+}
+.navigation button:hover{
+    background-color:#EFEFEF;
+    border-width: 2px;
+    border-color:#3F67C5;
+    color:#3F67C5;
+}
+.navigation .links{
+    font-family:"Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    display:flex;
+    align-items:center;
+}
+.navigation .links a{
+    color:#231F20;
+    text-decoration: none;
+}
+.navigation .links a:visited{
+    color:#231F20;
+    text-decoration: none;
+}
+.navigation .links a:hover{
+    text-decoration:underline;
+}
+.navigation .links a{
+    padding:0.5em;
+}
+.navigation #signin img{
+    position:relative;
+    margin-right: 10px;
+    padding-top:10px;
+    
+}
