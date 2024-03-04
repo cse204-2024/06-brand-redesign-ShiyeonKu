@@ -68,7 +68,13 @@ span{
     grid-template-rows: auto auto auto auto auto auto;
     grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto;
 }
+
+/*navigation*/
 .navigation{
+    
+    backdrop-filter: blur(10px);
+}
+.nav_content{
     z-index:1;
     width:100%;
     height:70px;
@@ -79,8 +85,8 @@ span{
     flex-direction:row;
     justify-content: space-around;
     align-items:center;
-    background-color:#efefef8c;
-    box-shadow:-5px 5px 5px black;
+    background-color:rgba(255, 255, 255, 0.6);
+    box-shadow:0px 5px 5px rgba(0, 0, 0, 0.6);
 }
 .navigation #logo{
     width: 3em;
@@ -250,6 +256,7 @@ span{
 .f_article_group{
     display:flex;
     flex-direction:row;
+    justify-content:space-around;
 }
 .f_articles img{
     height:20em;
@@ -263,8 +270,8 @@ span{
 .f_articles a{
     width:100%;
     position:absolute;
-    margin-left:123em;
-    margin-top:38em;
+    margin-left:122em;
+    margin-top:37em;
     font-family:"Open Sans", sans-serif;
     font-weight: 400;
     font-size: 14px;
@@ -345,14 +352,15 @@ span{
 .f_news_group{
     display:flex;
     flex-direction:row;
+    justify-content:space-around;
 }
 .f_news img{
     height:10em;
-    width:15em;
+    width:20em;
     object-fit:cover;
 }
 .f_news .news_card{
-    width:15em;
+    width:20em;
     height:100%;
     margin:1em;
     border-radius: 5px;
@@ -361,8 +369,8 @@ span{
     border-color:#3F67C5;
 }
 .f_news .subtitle{
-    padding-left:1em;
-    padding-right:1em;
+    margin-left: 1em;
+    margin-right: 1em;
 }
 .f_news .news_card a{
     width: 100%;
@@ -371,7 +379,7 @@ span{
     font-size: 14px;
     color:#231F20;
     text-decoration: none;
-    margin-left:10em;
+    margin-left:15em;
     margin-top:0em;
 }
 .f_news .news_card a:visited{
@@ -387,6 +395,18 @@ span{
     grid-area: 6/1/7/12;
     position:relative;
     width:100%;
+    height:auto;
     margin-left:100px;
     margin-right:100px;
+    margin-top:5em;
+    padding: 2em;
+    background-color:#EFEFEF;
+}
+.footer a{
+    width: 100%;
+    font-family:"Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color:#231F20;
+    text-decoration: none;
 }
