@@ -51,7 +51,7 @@ h4{
 p{
     font-family:"Open Sans", sans-serif;
     font-weight:400;
-    font-size:14px;
+    font-size:16px;
 }
 span{
     font-family:"Open Sans", sans-serif;
@@ -80,7 +80,7 @@ span{
     flex-direction:row;
     justify-content: space-around;
     align-items:center;
-    background-color:rgba(255, 255, 255, 0.6);
+    background-color:rgba(255, 255, 255, 0.8);
     box-shadow:0px 5px 5px rgba(0, 0, 0, 0.6);
     
 }
@@ -220,13 +220,13 @@ span{
     margin-left:2em;
 }
 .f_image span{
-    padding-left:1em;
+    padding-left:2em;
     margin-left:2em;
     color:#3F67C5;
 }
 .f_image a{
     padding:1em;
-    margin:2em;
+    margin-left:2em;
     font-family:"Open Sans", sans-serif;
     font-weight: 400;
     font-size: 14px;
@@ -285,6 +285,8 @@ span{
 .f_articles a{
     width:100%;
     position:absolute;
+    bottom:1em;
+    left:1em;
     font-family:"Open Sans", sans-serif;
     font-weight: 400;
     font-size: 14px;
@@ -383,13 +385,12 @@ span{
 }
 .f_news .news_card a{
     position:absolute;
+    bottom:0;
     font-family:"Open Sans", sans-serif;
     font-weight: 400;
     font-size: 14px;
     color:#231F20;
     text-decoration: none;
-    margin-left:10em;
-    margin-top:0em;
 }
 .f_news .news_card a:visited{
     color:#231F20;
