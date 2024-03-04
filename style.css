@@ -138,6 +138,12 @@ span{
     color:#231F20;
     text-decoration: none;
 }
+.navigation .links #signup{
+    border-radius:50px;
+    border-style:solid;
+    border-width:1px;
+    border-color:#231F20;
+}
 .navigation .links a:visited{
     color:#231F20;
     text-decoration: none;
@@ -213,6 +219,7 @@ span{
     flex-direction:column;
     justify-content:center;
     margin-left:3em;
+    margin-right:3em;
 }
 .f_image p{
     width:30em;
@@ -240,6 +247,44 @@ span{
 .f_image a:hover{
     text-decoration:underline;
 }
+@media screen and (max-width:1100px){
+    .f_image .description{
+        justify-content: center;
+        align-items: center;
+        margin-left:1em;
+        margin-right:1em;
+        padding-left:1em;
+        padding-right:1em;
+        margin-top:1em;
+        margin-bottom:-15em;
+    }
+    .f_image .content{
+        flex-wrap:wrap;
+        margin:0%;
+        padding:0%;
+
+    }
+    .f_image img{
+        height:30%;
+        margin-top:-15em;
+    }
+    .f_image p{
+        width:70%;
+        margin-left:0;
+        padding-left:0;
+    }
+    .f_image .content{
+        display:flex;
+        flex-direction:column;
+        justify-content: center;
+        align-items:center;
+        border-width:1px;
+        border-color:#3F67C5;
+        border-style:solid;
+        border-radius: 5px;
+        padding:5%;
+    }
+}
 
 /*featured articles*/
 .f_articles{
@@ -260,6 +305,11 @@ span{
     display:flex;
     flex-direction:row;
     justify-content:space-around;
+}
+@media screen and (max-width:1100px){
+    .f_article_group{
+        flex-wrap:wrap;
+    }
 }
 .f_articles img{
     height:20em;
@@ -367,11 +417,11 @@ span{
 }
 .f_news img{
     height:10em;
-    width:15em;
+    width:20em;
     object-fit:cover;
 }
 .f_news .news_card{
-    width:15em;
+    width:20em;
     height:100%;
     margin:1em;
     border-radius: 5px;
@@ -379,13 +429,33 @@ span{
     border-style:solid;
     border-color:#3F67C5;
 }
+@media screen and (max-width:1350px){
+    .f_news img{
+        width:15em;
+    }
+    .f_news .news_card{
+        width:15em;
+    }
+}
+@media screen and (max-width:1100px){
+    .f_news_group{
+        display:flex;
+        flex-direction:row;
+        justify-content:space-around;
+        flex-wrap:wrap;
+    }
+    .f_news .news_card{
+        height:fit-content;
+    }
+    .f_news .subtitle{
+        padding-bottom: 1em;
+    }
+}
 .f_news .subtitle{
     padding-left: 1em;
     padding-right: 1em;
 }
 .f_news .news_card a{
-    position:absolute;
-    bottom:0;
     font-family:"Open Sans", sans-serif;
     font-weight: 400;
     font-size: 14px;
