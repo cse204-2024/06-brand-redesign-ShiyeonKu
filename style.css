@@ -27,11 +27,46 @@
     font-variation-settings:
       "wdth" 100;
 }
+/*font*/
+h1{
+    font-family:"Playfair Display", serif;
+    font-weight: 600;
+    font-size: 60px;
+}
+h2{
+    font-family:"Open Sans", sans-serif;
+    font-weight:700;
+    font-size:45px;
+}
+h3{
+    font-family:"Playfair Display", serif;
+    font-weight: 400;
+    font-size: 24px;
+}
+h4{
+    font-family:"Open Sans", sans-serif;
+    font-weight:700;
+    font-size:20px;
+}
+p{
+    font-family:"Open Sans", sans-serif;
+    font-weight:400;
+    font-size:14px;
+}
+span{
+    font-family:"Open Sans", sans-serif;
+    font-weight:400;
+    font-size:12px;
+}
 
 /*body setting*/
 .container{
-    margin-left:100px;
-    margin-right:100px;
+    /*set up a grid*/
+    width:100%;
+    height:auto;
+    display:grid;
+    grid-template-rows: auto auto auto auto auto auto;
+    grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto;
 }
 .navigation{
     z-index:1;
@@ -39,13 +74,13 @@
     height:70px;
     position:fixed;
     top:0;
-    padding-top:2em;
+    padding-top:1em;
     display:flex;
     flex-direction:row;
     justify-content: space-around;
     align-items:center;
-    background-color:#efefef31;
-    box-shadow:-5px 5px 5px gray;
+    background-color:#efefef8c;
+    box-shadow:-5px 5px 5px black;
 }
 .navigation #logo{
     width: 3em;
@@ -55,7 +90,7 @@
     width:2em;
 }
 .navigation input[type=text]{
-    width: 30em;
+    width: 35em;
     padding:0.7em;
     padding-left:3.5em;
     background: url("ref/search.png") no-repeat 20px 7px;
@@ -63,9 +98,13 @@
     border-radius: 30px;
     border-width:1px;
     border-style:solid;
+    border-color:#231F20;
     font-family:"Open Sans", sans-serif;
     font-weight: 400;
     font-size: 14px;
+}
+.navigation input[type=text]::placeholder{
+    color:#231F20;
 }
 .navigation button{
     width:8em;
@@ -112,4 +151,230 @@
     margin-right: 10px;
     padding-top:10px;
     
+}
+/*header*/
+.head{
+    grid-area:1 / 1 / 2 / 12;
+    background:black;
+    overflow:hidden;
+    width:100%;
+    height: 40em;
+    position:relative;
+}
+.head img{
+    width:100%;
+    object-fit:cover;
+    opacity:0.4;
+}
+.head .title{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    color:#EFEFEF;
+    text-align:center;
+}
+
+/*featured image*/
+.f_image{
+    grid-area: 2/1/3/12;
+    height:40em;
+    width: 100%;
+    margin-left:100px;
+    margin-right:100px;
+    position:relative;
+    display:flex;
+    flex-direction:row;
+}
+.f_image img{
+    width:auto;
+    height:80%;
+    box-shadow: 5px 5px 5px gray;
+}
+.f_image .content{
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    border-width:1px;
+    border-color:#3F67C5;
+    border-style:solid;
+    border-radius: 5px;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+.f_image .description{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+.f_image p{
+    width:30em;
+    padding-left:1em;
+    margin-left:2em;
+}
+.f_image span{
+    padding-left:1em;
+    margin-left:2em;
+    color:#3F67C5;
+}
+.f_image a{
+    padding:1em;
+    margin:2em;
+    font-family:"Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color:#231F20;
+    text-decoration: none;
+}
+.f_image a:visited{
+    color:#231F20;
+    text-decoration:none;
+}
+.f_image a:hover{
+    text-decoration:underline;
+}
+
+/*featured articles*/
+.f_articles{
+    grid-area: 3/1 /4 /12;
+    height:40em;
+    width: 100%;
+    margin-left:100px;
+    margin-right:100px;
+    position:relative;
+    display:flex;
+    flex-direction:row;
+}
+.f_articles img{
+    height:20em;
+    width:17em;
+    object-fit:cover;
+}
+.f_articles p{
+    width:17em;
+    margin-top:-1em;
+}
+.f_articles a{
+    width:100%;
+    position:absolute;
+    margin-left:123em;
+    margin-top:38em;
+    font-family:"Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color:#231F20;
+    text-decoration: none;
+}
+.f_articles a:visited{
+    color:#231F20;
+    text-decoration:none;
+}
+.f_articles a:hover{
+    text-decoration: underline;
+}
+.f_articles .article_card{
+    width:20em;
+    height:auto;
+    margin:1em;
+    padding:2em;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    border-radius: 5px;
+    box-shadow: 0px 5px 7px gray;
+}
+
+/*banner*/
+.call{
+    grid-area:4/1/5/12;
+    height:40em;
+    width: 100%;
+    overflow:hidden;
+    background:black;
+    position:relative;
+}
+.call img{
+    width:100%;
+    height:auto;
+    opacity:0.4;
+}
+.call .call_title{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    color:#EFEFEF;
+    text-align:center;
+}
+.call button{
+    margin:1em;
+    width:auto;
+    padding:0.7em;
+    padding-left:1.5em;
+    padding-right:1.5em;
+    border-radius:5px;
+    background-color:#3F67C5;
+    font-family:"Open Sans", sans-serif;
+    font-weight:700;
+    font-size: 14px;
+    color:#EFEFEF;
+}
+.call button:hover{
+    color:#3F67C5;
+    background-color:#EFEFEF;
+    border-color:#3F67C5;
+}
+
+/*featured news*/
+.f_news{
+    grid-area:5/1/6/12;
+    height:20em;
+    width: 100%;
+    margin-left:100px;
+    margin-right:100px;
+    position:relative;
+    display:flex;
+    flex-direction:row;
+}
+.f_news img{
+    height:10em;
+    width:15em;
+    object-fit:cover;
+}
+.f_news .news_card{
+    width:15em;
+    height:120%;
+    margin:1em;
+    border-radius: 5px;
+    border-width: 1px;
+    border-style:solid;
+    border-color:#3F67C5;
+}
+.f_news .subtitle{
+    padding-left:1em;
+    padding-right:1em;
+}
+.f_news .news_card a{
+    width:100%;
+    font-family:"Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color:#231F20;
+    text-decoration: none;
+    display:flex;
+    align-self:flex-end;
+    justify-content: flex-end;
+}
+.f_news .news_card a:visited{
+    color:#231F20;
+    text-decoration: none;
+}
+.f_news .news_card a:hover{
+    text-decoration:underline;
+}
+
+/*footer*/
+.footer{
+    grid-area: 6/1/7/12;
+    position:relative;
 }
