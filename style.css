@@ -91,6 +91,16 @@ span{
 .navigation .icon{
     width:2em;
 }
+.navigation .hamburger{
+    height:100%;
+    margin:1em;
+    padding-top:1em;
+    display:none;
+}
+.navigation .hamburger img{
+    width:3em;
+    height:3em;
+}
 .navigation input[type=text]{
     width: 35em;
     padding:0.7em;
@@ -158,7 +168,38 @@ span{
     position:relative;
     margin-right: 10px;
     padding-top:10px;
-    
+}
+@media screen and (max-width:1200px){
+    .navigation .hamburger{
+        display:block;
+    }
+    .navigation .links{
+        display:none;
+    }
+    .navigation input[type=text]{
+        width:30em;
+    }
+    .navigation form{
+        width:max-content;
+        display:flex;
+        flex-wrap:none;
+    }
+}
+@media screen and (max-width:800px){
+    .navigation form{
+        display:none;
+    }
+    .navigation{
+        display:flex;
+        justify-content:space-around;
+    }
+    .navigation #logo{
+        margin-left:-10em;
+    }
+    .navigation .hamburger{
+        margin-right: -10em;
+    }
+
 }
 /*header*/
 .head{
@@ -479,6 +520,12 @@ span{
     padding: 2em;
     background-color:#EFEFEF;
     display:flex;
+    flex-direction:column;
+}
+.footer_links{
+    margin-top:2em;
+    display:flex;
+    justify-content: space-between;
 }
 .footer a{
     width: 100%;
@@ -487,4 +534,11 @@ span{
     font-size: 14px;
     color:#231F20;
     text-decoration: none;
+}
+.footer a:visited{
+    color:#231F20;
+    text-decoration: none;
+}
+.footer a:hover{
+    text-decoration: underline;
 }
