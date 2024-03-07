@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"name": "06-brand-redesign-ShiyeonKu",
+			"path": "."
+		},
+		{
+			"name": "ref",
+			"path": "../../ref"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "06-brand-redesign-ShiyeonKu"
+	}
+}

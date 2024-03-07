@@ -1,5 +1,5 @@
 # Starter HTML and CSS
 
-This repository provides blank HTML and CSS files.
+Shiyeon Monk
 
-Before submitting, replace the text in this README file with your name and a brief description of your work (just a sentence or two will do).
+I redesigned the Wikipedia website with new images and structures. Images are from wikipedia or license-free website such as Unsplash. 

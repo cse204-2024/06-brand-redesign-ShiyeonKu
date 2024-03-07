@@ -289,7 +289,7 @@ span{
 .f_image a:hover{
     text-decoration:underline;
 }
-@media screen and (max-width:1100px){
+@media screen and (max-width:1250px){
     .f_image .description{
         justify-content: center;
         align-items: center;
@@ -304,7 +304,6 @@ span{
         flex-wrap:wrap;
         margin:0%;
         padding:0%;
-
     }
     .f_image img{
         height:30%;
@@ -541,4 +540,13 @@ span{
 }
 .footer a:hover{
     text-decoration: underline;
+}
+@media screen and (max-width:1100px){
+    .footer_links{
+        flex-wrap:wrap;
+    }
+    .footer a{
+        margin-right:2em;
+        padding-bottom:1em;
+    }
 }
